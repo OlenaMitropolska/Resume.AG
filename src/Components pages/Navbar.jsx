@@ -23,7 +23,7 @@ function Navbar() {
     </div>
     <a className="btn btn-ghost text-xl">AG</a>
   </div>
-  <div className="navbar-center hidden lg:flex">
+  <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       <li><button>career highlights</button></li>
       <li>
@@ -31,9 +31,9 @@ function Navbar() {
       <li><button>contact me</button></li>
     </ul>
   </div>
-  <div className="navbar-end">
+  {/* <div className="navbar-end">
     <button className='text-2xl'><a  target='blank' href="https://de.linkedin.com/in/alexander-gossmann-177a2b177"><ion-icon name="logo-linkedin"></ion-icon></a></button>
-  </div>
+  </div> */}
 </div>
     </div>
   )
