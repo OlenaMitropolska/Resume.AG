@@ -8,9 +8,9 @@ function Footer() {
   </nav>  */}
   <nav>
     <div className="grid grid-flow-col gap-4">
-      <button className='text-3xl'><a href=""></a><ion-icon name="logo-twitter"></ion-icon></button>
-      <button className='text-3xl'><a href=""></a><ion-icon name="logo-linkedin"></ion-icon></button>
-      <button className='text-3xl'><a href=""></a><ion-icon name="logo-facebook"></ion-icon></button>
+      <button className='text-3xl'><a  target='blank' href="https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></button>
+      <button className='text-3xl'><a  target='blank' href="https://de.linkedin.com/in/alexander-gossmann-177a2b177"><ion-icon name="logo-linkedin"></ion-icon></a></button>
+      <button className='text-3xl'><a  target='blank' href="https://www.facebook.com/?locale=de_DE"><ion-icon name="logo-facebook"></ion-icon></a></button>
     </div>
   </nav> 
   <aside>
