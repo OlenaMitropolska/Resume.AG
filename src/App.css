@@ -19,3 +19,51 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
+.main {
+  height: 100%;
+  width: 100%;
+}
+.mainhero {
+  height: 100%;
+  width: 100%;
+}
+.heroTextDiv {
+  border: none;
+  border-radius: 15px;
+  height: 450px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.herotext {
+  position: relative;
+  left: 300px;
+  background-color: rgb(248, 245, 245);
+}
+/* .mainPage {
+  height: 100%;
+  width: 100%;
+  background-color: purple;
+ background-image: url("https://ik.imagekit.io/lnmtrplsk/IMG_5959.JPG?updatedAt=1704984883054");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.opacityDiv {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(96, 94, 94);
+  opacity: 0.5;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+.mainText {
+  height: 80%;
+  width: 40%;
+  background-color: rgba(0,0,255,0);
+align-self: center;
+} */

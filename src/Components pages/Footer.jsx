@@ -3,9 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-<footer className="footer footer-center p-5 bg-base-200 text-base-content rounded">
-  {/* <nav className="grid grid-flow-col gap-4">
-  </nav>  */}
+<footer className="footer footer-center p-3 bg-base-200 text-base-content rounded gap-0">
   <nav>
     <div className="grid grid-flow-col gap-4">
       <button className='text-3xl'><a  target='blank' href="https://twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></button>

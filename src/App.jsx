@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components pages/Navbar';
 import Footer from './Components pages/Footer';
+import Main from './Components pages/Main';
 
 function App() {
   return (
@@ -10,11 +11,8 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route />
+        <Route path='/' element={<Main />} />
       </Routes>
- <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
 
     <Footer />
     </div>
