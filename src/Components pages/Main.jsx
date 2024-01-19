@@ -12,12 +12,7 @@ function Main() {
       <p className="text-2xl  italic text-white">Consultant</p>
   </div>
 </div>
-        {/* className='mainPage'
-        <div className='opacityDiv'>
-            <div className="mainText">
-                
-            </div>
-        </div> */}
+    
     </div>
   )
 }

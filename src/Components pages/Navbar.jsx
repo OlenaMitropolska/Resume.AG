@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
     <div>
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 navBorder">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,13 +22,12 @@ function Navbar() {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">AG</a>
+    <Link to={"/"}><a className="btn btn-ghost text-xl">Alexander Gossmann</a></Link>
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
+      <li> <Link to={"/education"}><button>education</button></Link></li>
       <li><button>career highlights</button></li>
-      <li>
-      </li>
       <li><button>contact me</button></li>
     </ul>
   </div>
