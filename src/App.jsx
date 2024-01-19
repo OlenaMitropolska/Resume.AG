@@ -5,6 +5,7 @@ import Navbar from './Components pages/Navbar';
 import Footer from './Components pages/Footer';
 import Main from './Components pages/Main';
 import Education from './Components pages/Education';
+import Career from './Components pages/Career';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/education' element={<Education />} />
+        <Route path='/career' element={<Career />} />
       </Routes>
 
     <Footer />

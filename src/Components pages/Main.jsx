@@ -9,7 +9,7 @@ function Main() {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center flex flex-col relative left-72">
       <h1 className="text-6xl font-bold text-white">Alexander Gossmann</h1>
-      <p className="text-2xl  italic text-white">Consultant</p>
+      <p className="text-2xl  italic text-white">Senior Consultant</p>
   </div>
 </div>
     

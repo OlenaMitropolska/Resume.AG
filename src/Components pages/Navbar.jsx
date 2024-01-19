@@ -26,9 +26,9 @@ function Navbar() {
   </div>
   <div className="navbar-end hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li> <Link to={"/education"}><button>education</button></Link></li>
-      <li><button>career highlights</button></li>
-      <li><button>contact me</button></li>
+      <li> <Link to={"/education"}><button>ausbildung</button></Link></li>
+      <li> <Link to={"/career"}><button>karrierehöhepunkte</button></Link></li>
+      <li><button>kontakt</button></li>
     </ul>
   </div>
   {/* <div className="navbar-end">

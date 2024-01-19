@@ -29,7 +29,7 @@ function Education() {
   return (
     <div className='ausbildungPageMain'>
              <div className='ausbildungPageHead'>
-           <h1>EDUCATION</h1>
+           <h1>AUSBILDUNG</h1>
              </div>
 
         <div className='ausbildungPageMap'>
