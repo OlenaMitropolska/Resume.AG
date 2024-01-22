@@ -14,7 +14,7 @@ function Career() {
         "date": "01.09.2022 bis heute"
     },{
         "id": 1,
-        "position": "Assistent in der Wirtschaftsprüfung bei der Ernst & Young GmbH Wirtschaftsprüfungsgesellschaft im Bereich Assurance Banking:",
+        "position": "Assistent in der Wirtschaftsprüfung bei der Ernst & Young GmbH Wirtschaftsprüfungsgesellschaft im Bereich Assurance Banking",
         "reference": [{
             "head": "Tätigkeiten:",
             "description": "Durchführung der Jahresabschlussprüfung bei Großbanken, einer Privatbank sowie einer Leasinggesellschaft mit Fokus insbesondere auf:",
@@ -41,12 +41,18 @@ function Career() {
 
   return (
     <div className='careerMain'>
-<div className='careerHeadDiv'>
+{/* <div className='careerHeadDiv'>
     <p>Capital Markets | Risk Management | Regulatory | Banking | Finance | Audit | Consulting </p>
-    {/* <p><ion-icon name="arrow-down-outline"></ion-icon></p> */}
+</div> */}
+
+<div className='careerContent '>
+    {careerData.map((i,j) =>
+        <div key={j} className='careerMap'>
+            <h1>{i.position}</h1>
+            {/* <p>{i.focus}</p> */}
+            </div>
+        )}
 </div>
-
-
 
     </div>
   )
