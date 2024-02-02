@@ -105,19 +105,35 @@ height: 510px;
   /* gap: 10px; */
 }
 .careerContent {
-    height: 100%;
     width: 100%;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 3%;
-    padding: 20px;
+    gap: 20px;
+ padding: 5px;
+    overflow: auto;
+}
+.mapWithPagination {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
 }
   .careerMap {
-    height: 200px;
+  height: fit-content;
     width: 70%;
     border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
     /* height: 95%;
     width: 22%;
     border: 2px solid #154360;
@@ -126,4 +142,23 @@ height: 510px;
     flex-direction: column;
     gap: 10px;
     padding: 20px 10px; */
+  }
+  .careerMap h1 {
+    height: 50px;
+  }
+  .collapse {
+   background-color: #154360;
+   color: white;
+  }
+  .pagination {
+display: flex;
+gap: 3px;
+  }
+  .pagination button {
+    padding: 0 10px;
+border-radius: 10px;
+border: none;
+background-color: #154360;
+color: white;
+/* background-color: rgba(176, 174, 174, 0.302); */
   }

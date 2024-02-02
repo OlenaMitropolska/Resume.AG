@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Career() {
 
@@ -39,6 +39,17 @@ function Career() {
     },
 ]
 
+const [currentPage, setCurrentPage] = useState(1);
+const [itemsPerPage, setItemsPerPage] = useState(1);
+const totalPages = Math.ceil(careerData.length / itemsPerPage);
+const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+  const startIndex = (currentPage - 1) * itemsPerPage;
+const endIndex = startIndex + itemsPerPage;
+const displayedItems = careerData.slice(startIndex, endIndex);
+
+
   return (
     <div className='careerMain'>
 {/* <div className='careerHeadDiv'>
@@ -46,12 +57,50 @@ function Career() {
 </div> */}
 
 <div className='careerContent '>
-    {careerData.map((i,j) =>
-        <div key={j} className='careerMap'>
-            <h1>{i.position}</h1>
-            {/* <p>{i.focus}</p> */}
-            </div>
-        )}
+<div className='mapWithPagination'>
+
+<div className="pagination">
+      {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNumber) => (
+            <button
+          key={pageNumber}
+          onClick={() => handlePageChange(pageNumber)}
+          className={pageNumber === currentPage ? "active" : ""}
+        >
+          {pageNumber}
+        </button>
+      ))}
+    </div>
+
+    
+    {displayedItems.map((item) => (
+     <div className='careerMap'>
+     <h1>{item.position}</h1>
+   <hr />
+     <p>{item.focus}</p>
+     {/* start of collapse */}
+     <div className='responsibilitiesCareer'>
+         {item.reference.map(k =>
+         <div className="collapse">
+<input type="checkbox" /> 
+<div className="collapse-title text-xl font-medium">
+{k.head}
+</div>
+<div className="collapse-content"> 
+<li>{k.first}</li>
+<li>{k.second}</li>
+<li>{k.third}</li>
+<li>{k.fourth}</li>
+</div>
+</div>
+ )}
+ </div>
+ {/* end of collapse */}
+ </div>
+    ))}
+
+  </div>
+
+
 </div>
 
     </div>
