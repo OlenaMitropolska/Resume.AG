@@ -28,7 +28,7 @@ function Navbar() {
     <ul className="menu menu-horizontal px-1">
       <li> <Link to={"/education"}><button>ausbildung</button></Link></li>
       <li> <Link to={"/career"}><button>karrierehöhepunkte</button></Link></li>
-      <li><button>kontakt</button></li>
+      <li> <Link to={"/contact"}><button>kontakt</button></Link></li>
     </ul>
   </div>
   {/* <div className="navbar-end">
