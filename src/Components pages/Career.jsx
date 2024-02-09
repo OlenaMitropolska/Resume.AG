@@ -52,9 +52,11 @@ const displayedItems = careerData.slice(startIndex, endIndex);
 
   return (
     <div className='careerMain'>
-{/* <div className='careerHeadDiv'>
+      {/* head part */}
+<div className='careerHeadDiv'>
     <p>Capital Markets | Risk Management | Regulatory | Banking | Finance | Audit | Consulting </p>
-</div> */}
+</div>
+{/* head part end */}
 
 <div className='careerContent '>
 <div className='mapWithPagination'>
@@ -70,7 +72,6 @@ const displayedItems = careerData.slice(startIndex, endIndex);
         </button>
       ))}
     </div>
-
     
     {displayedItems.map((item) => (
      <div className='careerMap'>
