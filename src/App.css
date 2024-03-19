@@ -28,6 +28,7 @@ overflow: auto;
 .mainhero {
   height: 100%;
   width: 100%;
+background-position: -400px;
 }
 .ausbildungPageMain {
 height: 100%;
